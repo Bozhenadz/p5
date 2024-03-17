@@ -1,24 +1,24 @@
 var car1 = new Object();
-car1.color = "grey";
-car1.maxSpeed = 220;
+car1.color = "black";
+car1.maxSpeed = 250;
 car1.driver = {
-    name: "Liudmyla Marchak",
-    category: "C",
-    personalLimitations: "No driving at night"
+    name: "Dzendzuk Bozhena",
+    category: "B",
+    personalLimitations:null
 };
 car1.tuning = true;
 car1.numberOfAccidents = 0;
 
 var car2 = {
-    color: "black",
-    maxSpeed: 250,
+    color: "grey",
+    maxSpeed: 220,
     driver: {
-        name: "Liudmyla Marchak",
-        category: "B",
+        name: "Dzendzuk Bozhena",
+        category: "C",
         personalLimitations: null
     },
     tuning: false,
-    numberOfAccidents: 2
+    numberOfAccidents: 5
 };
 
 car1.drive = function() {
@@ -56,10 +56,10 @@ Truck.prototype.trip = function() {
     }
 };
 
-var truck1 = new Truck("blue", 4082, 80, "BMW", "X5");
-truck1.AssignDriver("Liudmyla Marchak", true, 25);
+var truck1 = new Truck("green", 4082, 80, "BMW", "X8");
+truck1.AssignDriver("Dzendzuk Bozhena", false, 20);
 truck1.trip();
 
-var truck2 = new Truck("black", 6070, 60, "Toyota", "RAV4");
-truck2.AssignDriver("Liudmyla Marchak", false, 30);
+var truck2 = new Truck("white", 6070, 60, "Audi", "q7");
+truck2.AssignDriver("Dzendzuk Bozhena", true, 25);
 truck2.trip();
